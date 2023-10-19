@@ -20,6 +20,9 @@ final class FileUploadMetadata {
 	/** @var string */
 	private $hash;
 
+    /** @var int */
+    private $mtime;
+
 	/**
 	 * @param int $length 
 	 * @param string $hash 
@@ -95,3 +98,4 @@ final class FileUploadMetadata {
 		return fstat($stream)['size'];
 	}
 }
+
